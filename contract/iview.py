@@ -15,3 +15,7 @@ class IView(ABC):
     @abstractmethod
     def setModel(self, model: IModel) -> None:
         pass
+
+    @abstractmethod
+    def askUserChoice(self) -> int:
+        pass
